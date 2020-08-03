@@ -1,25 +1,32 @@
 import React from 'react';
-import fb-icon from './fb-icon/png'
 
 
-class HeaderItem extends React.Component {
+class SocialIcon extends React.Component {
     render() {
-        return (
-        <div>
-            <div id="top-logo">
-                <img src='./assets/logo.png' id="logo"/> 
-                <label>
-                    <h1 class="logo">Delicious</h1>
-                    <p class="logo">THE BEST FOOD BLOG ON THE WEB.</p>
-                </label>
-            </div>
+        return <img{this.props.src}/>
 
-            <div id='social-icons'>
 
-            </div>
-            );
-
-        </div>    
-        )
-        } 
     }
+}
+
+class Header extends React.Component {
+render() {
+    return(
+    <div>
+        <div id="top-logo">
+            <img src='./assets/logo.png' id="logo"/> 
+            <label>
+                <h1 class="logo">Delicious</h1>
+                <p class="logo">THE BEST FOOD BLOG ON THE WEB.</p>
+            </label>
+        </div>
+
+        <div id='social-icons'>
+
+        </div>
+        );
+
+    </div>    
+        )
+    } 
+}
