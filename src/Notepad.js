@@ -4,7 +4,7 @@ class Notepad extends React.Component {
     render() {
         return (
             <div id='note-pad'>
-                <img src={this.props.notepad} alt="notepad">
+                <img src={this.props.notepad} alt="notepad"/>
                 <ul>
                     <li>1 1/2 cups milk</li>
                     <li>1/2 cup marscarpone</li>
@@ -19,7 +19,6 @@ class Notepad extends React.Component {
                     <li>2 tbsp butter</li>
                     <li>1 cup honey roasted pecans, roughly chopped</li>
                 </ul>
-                </img>
                 
             </div>
         )

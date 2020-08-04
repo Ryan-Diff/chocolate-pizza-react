@@ -1,5 +1,7 @@
 import React from 'react';
-import Notepad from 'Notepad.js';
+import Notepad from './Notepad.js';
+import Author from './Author.js';
+import Footer from './Footer.js';
 
 class Main extends React.Component {
     render() {
@@ -24,6 +26,8 @@ class Main extends React.Component {
                 </p>
             </div>
             <Notepad notepad='list-bg.png'/>
+            <Author vanessa='van-pic.png'/>
+            <Footer smalllogo='small-logo.png'/>
         
 
       </main>
@@ -33,15 +37,3 @@ class Main extends React.Component {
 }
 
 export default Main
-
-
-
-
-            // <div id='author'>
-            //     <img src='./assets/van-pic.png'>
-            //     <h3>Vanessa Stevenson</h3>
-            //     <p>
-            //         Food enthusiast, photography fan. Adda pinch of raw foodism and that's pretty much who I am. 
-            //     </p>
-            //     <button id='share-button'> Share</button>
-            // </div>  
